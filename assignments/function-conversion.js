@@ -44,11 +44,11 @@ console.log(subtract(5,6))
 // });
 // console.log(triple);
 
-let regulArray = [1,3,5,7];
+let myArray = [1,3,5,7,100];
 
-const triple = (array) => {
-    let hydrArray = array.map(x => x * 3);
+const triple = (regulArray) => {
+    let hydrArray = regulArray.map(x => x * 3);
     return hydrArray;
 }
 
-console.log(triple(regulArray))
+console.log(triple(myArray))
