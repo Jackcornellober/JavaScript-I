@@ -5,21 +5,36 @@
 // };
 // myFunction();
 
+const myFunction = () => {console.log("Function was invoked!")}
+
+myFunction();
+
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
+
+const anotherFunction = (param) => param
+
+console.log(anotherFunction("boi"))
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
 
+const add = (param1, param2) => param1 + param2
+
+console.log(add(2,8))
+
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
 
+const subtract = (param1, param2) => param1 - param2
+
+console.log(subtract(5,6))
 
 // Stretch
 
@@ -28,3 +43,12 @@
 //   return num * 3;
 // });
 // console.log(triple);
+
+let regulArray = [1,3,5,7];
+
+const triple = (array) => {
+    let hydrArray = array.map(x => x * 3);
+    return hydrArray;
+}
+
+console.log(triple(regulArray))
