@@ -24,7 +24,7 @@ const mitzi = {
   name: "Mitzi",
   email: "mmelloy0@psu.edu",
   gender: "F",
-  speak() {console.log('Hello, my name is ' + this.name + "!")},
+  speak() {return 'Hello, my name is ' + this.name + "!"},
   multiplyNums(a,b) {return a*b},
 }
 
@@ -33,7 +33,7 @@ const kennan = {
   name:"Kennan",
   email:"kdiben1@tinypic.com",
   gender: "M",
-  speak() {console.log('Hello, my name is ' + this.name + "!")},
+  speak() {return 'Hello, my name is ' + this.name + "!"},
   multiplyNums(a,b) {return a*b},
 }
 
@@ -42,7 +42,7 @@ const keven = {
   name: "Keven",
   email: "kmummery2@wikimedia.org",
   gender: "M",
-  speak() {console.log('Hello, my name is ' + this.name + "!")},
+  speak() {return 'Hello, my name is ' + this.name + "!"},
   multiplyNums(a,b) {return a*b},
 }
 
@@ -51,7 +51,7 @@ const gannie = {
   name: "Gannie",
   email: "gmartinson3@illinois.edu",
   gender: "M",
-  speak() {console.log('Hello, my name is ' + this.name + "!")},
+  speak() {return 'Hello, my name is ' + this.name + "!"},
   multiplyNums(a,b) {return a*b},
 }
 
@@ -105,21 +105,21 @@ const parent = {
   name: "Susan",
   age: 70,
   speak() {
-  console.log("Hello, my name is " + this.name + "!")
+  return "Hello, my name is " + this.name + "!"
   },
   
   child: {
     name: "George",
     age: 50,
     speak () {
-    console.log("Hello, my name is " + this.name + "!")
+    return "Hello, my name is " + this.name + "!"
   },
     
     grandchild: {
       name: "Sam",
       age: "30",
       speak () {
-      console.log("Hello, my name is " + this.name + "!")
+      return "Hello, my name is " + this.name + "!"
       },
     }
   }
@@ -138,8 +138,4 @@ console.log(parent.child.speak())
 // Have the grandchild speak
 console.log(parent.child.grandchild.speak())
 
-console.log(parent.child.grandchild.speak())
 
-console.log(parent.child.grandchild.speak())
-
-console.log(parent.child.grandchild.speak())
